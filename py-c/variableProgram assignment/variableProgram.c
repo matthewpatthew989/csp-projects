@@ -1,7 +1,9 @@
 #include <stdio.h>
 
 int main(void){
-    char name[7] = {'m', 'a', 't', 't', 'h', 'e', 'w'};
+    char name[20];
+    printf("please tell me your name: \n");
+    fgets(name, sizeof(name), stdin);
     printf("hello %s", name);
     return 0;
 }

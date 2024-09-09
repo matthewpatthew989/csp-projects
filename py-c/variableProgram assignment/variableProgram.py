@@ -1,5 +1,3 @@
-name = 'matthew';
-
-name = 'andrew';
+name = input("what is your name?: ");
 
 print("hello "+ name + "!");
