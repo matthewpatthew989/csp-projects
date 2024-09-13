@@ -15,7 +15,7 @@ int main(void){
     printf("what are the expenses of your utilities\n");
     scanf("%f", &utilitys);
     expenses = rent + groseries + transportation +utilitys;
-    savings = income
+    savings = income*0.2;
     printf("here are your expences", expenses);
     printf("your income is: $%.2f\n");
     prent = rent/income;
