@@ -16,12 +16,18 @@ int main(void){
     scanf("%f", &utilitys);
     expenses = rent + groseries + transportation +utilitys;
     savings = income*0.2;
-    printf("here are your expences", expenses);
+    total = income - (expenses + savings);
     printf("your income is: $%.2f\n");
+    printf("here are your savings %.2f\n", savings);
+    printf("here are your expences %.2f\n", expenses);
+    printf("heres what you have left to spend %.2f\n", total);
     prent = rent/income;
     putilitys = utilitys/income;
     pgroseries = groseries/income;
     ptransportation = transportation/income;
-
+    printf("this is the percent of your rent out of your income %.2f\n", prent);
+    printf("this is the percent of your utilitys out of your income %.2f\n", putilitys);
+    printf("this is the percent of your groseries out of your income %.2f\n", pgroseries);
+    printf("this is the percent of your transportation out of your income %.2f\n", ptransportation);
     return 0;
 }
