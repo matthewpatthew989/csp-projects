@@ -6,11 +6,11 @@ int main(void){
     printf("type a name: ");
     scanf("%s",name);
     printf("type a place: ");
-    fgets(place,sizeof(place),stdin);
+    scanf("%s",place);
     printf("type a verb: ");
-    fgets(verb,sizeof(verb),stdin);
+    scanf("%s",verb);
     printf("type a noun: ");
-    fgets(noun,sizeof(noun),stdin);
+    scanf("%s",noun);
     strcat(sentance,name);
     strcat(sentance," went to the ");
     strcat(sentance,place);
