@@ -1,2 +1,5 @@
 name = input("what is your name? ")
+decorates = input("what decorations do you want? ")
 print(name)
+print(decorates)
+print(decorates+name+decorates)
