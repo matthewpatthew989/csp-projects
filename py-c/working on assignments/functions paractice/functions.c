@@ -1,12 +1,16 @@
-#include <stdio>
-void hello(char name[]){
-    printf("what is your name: ");
-    scanf("%s", &name);
-    printf("hello", name);
+#include <stdio.h>
+
+char name;
+
+void hello(char type[]){
+    printf("hello %s\n",type);
 }
 
 int main(void){
-    hello;
-    
+    hello("mathew");
+    hello("andrew");
+    hello("nathaneal");
+    hello("peter");
+    hello("von");
     return 0;
 }
