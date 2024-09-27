@@ -1,17 +1,14 @@
 
 print("this is your new finacial calculator")
 
-
-
 def usrinpt(type):
-    amount = "how much is your {type} a month: "
-    return f""
+    return f"{type}"
 
-income = usrinpt(input)
-rent = float (input("whats your rent? "))
-utilitys = float (input("how much do you spend on utilitys? "))
-groseries = float (input("how much on groseries? "))
-transportation = float (input("how much on transport? "))
+income = float (usrinpt(input("whats your monthly income: ")))
+rent = float (usrinpt(input("whats your monthly rent: ")))
+utilitys = float (usrinpt(input("whats your monthly utilities: ")))
+groseries = float (usrinpt(input("whats your monthly groseries: ")))
+transportation = float (usrinpt(input("whats your monthly transportation: ")))
 expenses = rent+utilitys+groseries+transportation
 savings = income*.2
 total = income-expenses-savings
