@@ -1,6 +1,13 @@
 
 print("this is your new finacial calculator")
-income = float (input("how much do you make a month? "))
+
+
+
+def usrinpt(type):
+    amount = "how much is your {type} a month: "
+    return f""
+
+income = usrinpt(input)
 rent = float (input("whats your rent? "))
 utilitys = float (input("how much do you spend on utilitys? "))
 groseries = float (input("how much on groseries? "))
@@ -12,6 +19,7 @@ print("your income is", income)
 print("here are your savings", savings)
 print("here are your expenses", expenses)
 print("heres what you have left to spend", total)
+
 def percent(type,amount):
     per = amount/income*100
     return f"{type} is {per}% of your income"
