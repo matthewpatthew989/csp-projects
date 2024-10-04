@@ -8,7 +8,7 @@ float input(char type[],float var){
 
 void percent(char type[],int amount){
     int per = amount/income*100;
-    printf("your percent %s is %d%% of your income",type, amount);
+    printf("your percent %s is %d%% of your income\n",type, per);
 }
 
 int main(void){
@@ -21,10 +21,10 @@ int main(void){
     expenses = rent + groseries + transportation +utillities;
     savings = income*0.2;
     total = income - (expenses + savings);
-    printf("your income is: %f%%\n",income);
-    printf("here are your savings %f%%\n", savings);
-    printf("here are your expences %f%%\n", expenses);
-    printf("heres what you have left to spend %f%%\n", total);
+    printf("your income is: %.2f\n",income);
+    printf("here are your savings %.2f\n", savings);
+    printf("here are your expences %.2f\n", expenses);
+    printf("heres what you have left to spend %.2f\n", total);
     percent("rent",rent);
     percent("utillities",utillities);
     percent("groseries",groseries);
